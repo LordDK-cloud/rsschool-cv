@@ -18,7 +18,12 @@
     * Bootstrap 
     * Gulp
     * Sass/Scss
- 
-
+    
+* ## Education
+    School №1, finished 11 classes. \
+    "HtmlAcademy"
+        
+* ## English lvl
+    A2
 
 
