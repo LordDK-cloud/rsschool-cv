@@ -10,5 +10,15 @@
    my goal is to become a sought-after specialist, to become a middle front-end developer.
    I am sure that I can achieve my goal.
 
+* ## Skills
+
+    * HTML5 
+    * CSS 
+    * JS 
+    * Bootstrap 
+    * Gulp
+    * Sass/Scss
+ 
+
 
 
