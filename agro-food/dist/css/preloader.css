@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "OpenSans";
+  font-display: swap;
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/OpenSans-Light.woff") format("woff"), url("../fonts/OpenSans-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-display: swap;
+  font-weight: 900;
+  font-style: normal;
+  src: url("../fonts/Raleway-Black.woff") format("woff"), url("../fonts/Raleway-Black.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/Raleway-Bold.woff") format("woff"), url("../fonts/Raleway-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-display: swap;
+  font-weight: 100;
+  font-style: normal;
+  src: url("../fonts/Raleway-Thin.woff") format("woff"), url("../fonts/Raleway-Thin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Storytella";
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Storytella.woff") format("woff"), url("../fonts/Storytella.woff2") format("woff2");
+}
+
+@supports (-webkit-appearance:none) {
+
+}

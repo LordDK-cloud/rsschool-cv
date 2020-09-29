@@ -1,0 +1,57 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+   @font-face {
+      font-family: $font_name;
+      font-display: swap;
+      font-weight:$weight;
+      font-style: $style;
+      src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+   }
+}
+
+:root {
+   // TODO! Colors
+   --yellow:#fcdb5a;
+   --black: #1b1b1b;
+   --grey: #b3b3b3;
+   --black-light: #333;
+
+   // TODO! FONT-SIZES
+   --fz-v-big: 230px;
+   --fz-big: 200px;
+   --fz-semi-big: 100px;
+   --fz-five:50px;
+   --fz-x-xxl: 40px;
+   --fz-xxl: 30px;
+   --fz-xl: 25px;
+   --fz-lg: 18px;
+   --fz-md: 16px;
+   --fz-sm: 14px;
+   --fz-small: 12px;
+
+   //TODO! margins
+   --mr-big: 95px;
+   --mr-xxl: 70px;
+   --mr-xl: 60px;
+   --mr-xl-lg: 50px;
+   --mr-lg:30px;
+   --mr-md:25px;
+   --mr-sm:20px;
+
+   //TODO! agro-perfect padding 
+   --pd-agro: 220px;
+   --pd-def:150px;
+
+   //TODO! Section Comments padding for blockquote 
+   --comm-p: 65px;
+
+   //TODO! Proportions (images/post ..)
+   --proportion-w:370px;
+
+   //TODO! font-family 
+   --storytella: 'Storytella', sans-serif;
+   --opensans  : OpenSans, sans-serif;
+   --raleway   : "Raleway", sans-serif;
+}
+
+
+

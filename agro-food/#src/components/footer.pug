@@ -1,0 +1,73 @@
+//TODO Footer
+footer(id="footer")
+   .wrapper.footer-wrapper
+      .footer__container.wrapper.a-start.j-center.wrapper-lg-col.a-lg-center 
+         .wrapper.footer__container-wrap.j-center
+            .footer__col.wrapper.wrapper-col.j-between.a-start.a-lg-center
+               div.footer__col-logo 
+                  //TODO! Logotip
+                  a.header-logo.logo.footer-logo(role='banner' href="/" aria-label="Logo of Agro food")
+                     +webp('logo', 'png', 'Agro food')
+                     span(aria-hidden='true') AGRO
+               //Emal address, contacts
+               .footer__contact 
+                  h2.footer__contact-title email
+                  a.footer__contact-link(href="mailto:support@agrocompany.com") support@agrocompany.com
+               
+            .footer__col-menu.wrapper.wrapper-col.j-between.a-start.a-lg-center
+               nav.footer__menu.wrapper.a-start.j-lg-center
+                  ul.footer__ul
+                     li.footer__list
+                        a.footer__link.scroll-to(href="#home") Home
+                     li.footer__list
+                        a.footer__link.scroll-to(href="#quality") About
+                     li.footer__list
+                        a.footer__link.scroll-to(href="#agroFood") Pages
+                     li.footer__list
+                        a.footer__link.scroll-to(href="#menuList") Gallery
+                     li.footer__list
+                        a.footer__link.scroll-to(href="#comments") Blog
+                     li.footer__list
+                        a.footer__link.scroll-to(href="#footer") Contacts
+                  ul.footer__ul
+                     li.footer__list
+                        a.footer__link(href="#") Partnets
+                     li.footer__list
+                        a.footer__link(href="#") Customer Service
+                     li.footer__list
+                        a.footer__link(href="#") Vegetables
+                     li.footer__list
+                        a.footer__link(href="#") Fruits
+                     li.footer__list
+                        a.footer__link(href="#") Organic Food
+                     li.footer__list
+                        a.footer__link(href="#") Privacy policy 
+               //Еуд address, contacts
+               .footer__contact 
+                  h2.footer__contact-title Phone
+                  div 
+                     a.footer__contact-link(href="tel:+1 (234) 56789") +1 (234) 56789
+                     | , 
+                     a.footer__contact-link(href="tel:+1 987 654 3210") +1 987 654 3210
+         .footer__social
+            a.footer__social-link(href="#" target="_blank" rel="noopener")
+               +iconImg('footer__social1', 'footer-social-icon', 'Agro food in twitter')
+            a.footer__social-link(href="#" target="_blank" rel="noopener")
+               +iconImg('footer__social2', 'footer-social-icon', 'Agro food in facebook')
+            a.footer__social-link(href="#" target="_blank" rel="noopener")
+               +iconImg('footer__social3', 'footer-social-icon', 'Agro food in linkedin')
+      .map#map
+      
+
+
+
+
+
+
+.modal
+         .modal-wrap
+            p.modal-text(aria-live="assertive") Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, eveniet ipsa maxime nobis natus assumenda ducimus, nesciunt aut, consequatur laboriosam reiciendis! Nesciunt dolor incidunt assumenda. In rerum delectus quasi assumenda!
+
+            button.btn-close.wrapper.j-center.wrapper-col.a-start(aria-label="Close popup") 
+               span
+               span

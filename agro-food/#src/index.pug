@@ -1,0 +1,267 @@
+html(lang="en")
+   include components/head.pug
+   body(style="overflow:hidden")
+      include components/header.pug
+      main
+
+         //TODO section number-2, quality
+         section.quality(id="quality")
+            .container.wrapper.j-between.wrapper-md-col
+               div 
+                  div.quality__img-wrapper 
+                     picture 
+                        source(srcset="images/section-2__img.webp" type="image/webp")
+                        img(class="quality__img" src="images/section-2__img.jpg" alt='Quality food' aria-hidden="true")
+                     picture 
+                        source(srcset="images/section-2__img.webp" type="image/webp")
+                        img(class="quality__img-before" src="images/section-2__img.jpg" alt='Quality food' aria-hidden="true")
+               h1.quality__title <span style="color:#72aa41">Quality</span> 
+                  <span style="color:#fcdb5a">food is the</span> 
+                  <span style="color:#db2985">most important</span> 
+                  <span style="color:#f2a137">thing in our</span> 
+                  <span style="color:#4fb1c9">life</span> 
+
+         //TODO section agro-food
+         section.agro-food-haracteric(id='agroFood')  
+            .container 
+               h1.title.agro-food__title <b>Agro food</b> Services
+               p.title-descr Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
+               .wrapper.j-around.a-end.service-wrapper 
+                  .agro-food__service
+                     +icon('descr-ico1', 'agro__service-ico')
+                     p.service__title Steak House
+                  .agro-food__service
+                     +icon('descr-ico2', 'agro__service-ico')
+                     p.service__title Tasty Cereals
+                  .agro-food__service
+                     +icon('descr-ico3', 'agro__service-ico')
+                     p.service__title Italian Pizza
+                  .agro-food__service
+                     +icon('descr-ico4', 'agro__service-ico')
+                     p.service__title Vegeterian Burgers
+                  .agro-food__service
+                     +icon('descr-ico5', 'agro__service-ico')
+                     p.service__title Awesome Cupcake
+                  .agro-food__service
+                     +icon('descr-ico6', 'agro__service-ico')
+                     p.service__title Vegetables
+         //TODO section agro perfect
+         section.agro-perfect.bg-section(style='background-image:url("images/agro-perfect.jpg")')
+            picture 
+               source(srcset="images/agro-perfect.webp" type="image/webp")
+               img.absolute-img(src="images/agro-perfect.jpg" alt="" aria-hidden="true")
+            .container 
+               h1.title.agro-food__title.agro-perfect__title <b>Agro Perfect</b> <br> food for you
+               p.agro-perfect__descr Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic words etc.  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.  
+               a(href="#").btn Discover
+         //TODO Section menu list
+         section.section-menu(id='menuList')
+            //TODO! hidden title for seo
+            h1.hidden-title Agro food restaurant prepares healthy and tasty food 
+            .container.section-menu__flex-wrap.wrapper.j-center.wrapper-sm-col
+               section.section-menu__item.wrapper.wrapper-col.a-start
+                  //TODO! images only 292x221
+
+                  //TODO! в атрибуте data-alltext прописан полностью весь текст, который будет в модальном окне
+                  picture 
+                     source(srcset='images/agro-perfect_desc1.webp' type="image/webp")
+                     img.section-menu__img(src="images/agro-perfect_desc1.png", alt="our food is tasty and healthy" aria-hidden="true")
+                  .section-menu__content
+                     h2.section-menu__title Superfoods you should be eating
+                     p.section-menu__text(data-alltext='The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic words etc. Susp endisse ultricies nisi vel quam suscipit') <span class="agro-perfect__text">The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic</span> <br>
+                        a.section-menu__more(href="#" aria-describedby="Open modal window, where you can read the entire text") more...
+               section.section-menu__item.wrapper.wrapper-col.a-start
+                  picture 
+                     source(srcset='images/agro-perfect_desc2.webp' type="image/webp")
+                     img.section-menu__img(src="images/agro-perfect_desc2.png", alt="our food is tasty and healthy" aria-hidden="true")
+                  .section-menu__content 
+                     h2.section-menu__title Health Benefits of a Raw Food
+                     p.section-menu__text(data-alltext="Dogfish shark, bango hog sucker, baikal oilfish, eeltail catfish regal whiptail catfish; squarehead catfish electric ray.") <span class="agro-perfect__text">The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic</span><br>
+                        a.section-menu__more(href="#" aria-describedby="Open modal window, where you can read the entire text") more...
+               section.section-menu__item.wrapper.wrapper-col.a-start
+                  picture 
+                     source(srcset='images/agro-perfect_desc3.webp' type="image/webp")
+                     img.section-menu__img(src="images/agro-perfect_desc3.png", alt="our food is tasty and healthy" aria-hidden="true")
+                  .section-menu__content 
+                     h2.section-menu__title Grunt torrent catfish squaretail Norwegian Atlantic salmon
+                     p.section-menu__text(data-alltext="Northern clingfish searobin betta blue shark. Jackfish leopard danio suckermouth armored catfish, eelpout velvetfish goldspotted killifish--driftfish ronquil emperor golden loach") <span class="agro-perfect__text">The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic</span> <br> 
+                        a.section-menu__more(href="#" aria-describedby="Open modal window, where you can read the entire text") more...
+               section.section-menu__item.wrapper.wrapper-col.a-start
+                  picture 
+                     source(srcset='images/agro-perfect_desc4.webp' type="image/webp")
+                     img.section-menu__img(src="images/agro-perfect_desc4.png", alt="our food is tasty and healthy" aria-hidden="true")
+                  .section-menu__content 
+                     h2.section-menu__title Tips for Ripening your Fruit
+                     p.section-menu__text(data-alltext='The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic words etc. Susp endisse ultricies nisi vel quam suscipit') <span class="agro-perfect__text">The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic</span> <br>
+                        a.section-menu__more(href="#" aria-describedby="Open modal window, where you can read all this text") more...
+
+
+         //TODO Tasty cakes
+         section.cakes(style="background-image:url(images/tasty-Cakc.jpg)") 
+            .container
+               h1.hidden-title Agro food has the best desserts 
+               p.main-title.cakes__title Tasty <br> Cakes
+         
+         //TODO Agro Progress
+         section.agro-progress  
+            .container 
+               h1.title.agro-food__title <b>Agro</b> Progress
+               p.title-descr Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
+               .wrapper.j-around
+                  .wrapper.agro-progress__item.j-between
+                     picture 
+                        source(srcset='images/icon1.webp' type="image/webp")
+                        img.agro-progress__img(src="images/icon1.png", alt="agro perfect tasty" aria-hidden="true")
+                     .agro-progress__content 
+                        h2.agro-progress__title 350
+                        p.agro-progress__text Muffins
+                  .wrapper.agro-progress__item.j-between
+                     picture 
+                        source(srcset='images/icon2.webp' type="image/webp")
+                        img.agro-progress__img(src="images/icon2.png", alt="agro perfect tasty" aria-hidden="true")
+                     .agro-progress__content 
+                        h2.agro-progress__title 158
+                        p.agro-progress__text Cakes
+                  .wrapper.agro-progress__item.j-between
+                     picture 
+                        source(srcset='images/icon3.webp' type="image/webp")
+                        img.agro-progress__img(src="images/icon3.png", alt="agro perfect tasty" aria-hidden="true")
+                     .agro-progress__content 
+                        h2.agro-progress__title 500+
+                        p.agro-progress__text Cupcakes
+                  .wrapper.agro-progress__item.j-between
+                     picture 
+                        source(srcset='images/icon4.webp' type="image/webp")
+                        img.agro-progress__img(src="images/icon4.png", alt="agro perfect tasty" aria-hidden="true")
+                     .agro-progress__content 
+                        h2.agro-progress__title 685
+                        p.agro-progress__text Doughnut
+         
+         //TODO gallery 
+         section.gallery 
+            .Mycontainer
+               //TODO In data-imgBefore text for before 
+               .gallery__item(data-imgBefore="Testy Jam")
+                  picture
+                     source(srcset="images/gallery1.webp", type="image/webp")
+                     img.gallery__img(src="images/gallery1.png", alt="gallery image", aria-hidden="true")
+               .gallery__item(data-imgBefore="Very Testy Bred")
+                  picture
+                     source(srcset="images/gallery2.webp", type="image/webp")
+                     img.gallery__img(src="images/gallery2.png", alt="gallery image", aria-hidden="true")
+               .gallery__item(data-imgBefore="Jam")
+                  picture
+                     source(srcset="images/gallery3.webp", type="image/webp")
+                     img.gallery__img(src="images/gallery3.png", alt="gallery image", aria-hidden="true")
+               .gallery__item(data-imgBefore="Coffe")
+                  picture
+                     source(srcset="images/gallery4.webp", type="image/webp")
+                     img.gallery__img(src="images/gallery4.png", alt="gallery image", aria-hidden="true")
+               .gallery__item(data-imgBefore="Testy Cake")
+                  picture
+                     source(srcset="images/gallery5.webp", type="image/webp")
+                     img.gallery__img(src="images/gallery5.png", alt="gallery image", aria-hidden="true")
+               .gallery__item(data-imgBefore="Agro milk")
+                  picture
+                     source(srcset="images/gallery6.webp", type="image/webp")
+                     img.gallery__img(src="images/gallery6.png", alt="gallery image", aria-hidden="true")
+               .gallery__item(data-imgBefore="Meat")
+                  picture
+                     source(srcset="images/gallery7.webp", type="image/webp")
+                     img.gallery__img(src="images/gallery7.png", alt="gallery image", aria-hidden="true")
+               .gallery__item(data-imgBefore="Confetti")
+                  picture
+                     source(srcset="images/gallery8.webp", type="image/webp")
+                     img.gallery__img(src="images/gallery8.png", alt="gallery image", aria-hidden="true")
+         
+         //TODO Comments
+         section.agro-progress.comments.bg(style="background-image:url(images/comments-bg.jpg)" id="comments") 
+            .container 
+               h1.title.agro-food__title <b>People says</b> about agro
+               p.title-descr Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
+               
+               .swiper-container.swiper-comments
+                  .swiper-wrapper 
+                     .swiper-slide 
+                        blockquote.author__q Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic words etc.  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered
+                        .author.wrapper 
+                           picture
+                              source(srcset="images/avatar.webp", type="image/webp")
+                              img.author__avatar(src="images/avatar.png", alt="customer feedback about Agro food", aria-hidden="true")
+                           cite.author__name Terens Smith<span>/CEO AntalAgro</span>
+                     .swiper-slide 
+                           blockquote.author__q Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic words etc.  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered
+                           .author.wrapper 
+                              picture
+                                 source(srcset="images/avatar.webp", type="image/webp")
+                                 img.author__avatar(src="images/avatar.png", alt="customer feedback about Agro food", aria-hidden="true")
+                              cite.author__name Terens Smith<span>/CEO AntalAgro</span>
+                     .swiper-slide 
+                           blockquote.author__q Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic words etc.  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered
+                           .author.wrapper 
+                              picture
+                                 source(srcset="images/avatar.webp", type="image/webp")
+                                 img.author__avatar(src="images/avatar.png", alt="customer feedback about Agro food", aria-hidden="true")
+                              cite.author__name Terens Smith<span>/CEO AntalAgro</span>
+                  .comm-pagination.wrapper.j-sm-center
+
+         //TODO section blog posts 
+         section.agro-progress.blog.bg
+            .container 
+               h1.title.agro-food__title <b>Blog</b> Posts
+               p.title-descr.blog__descr Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
+               .wrapper.blog__posts.j-around
+
+                  //TODO! blog post
+                  article.blog__post(style="background-image:url(images/blog1.jpg)")
+                     a.post__link-wrap.wrapper.wrapper-col(href="#")
+                        p.post__descr ORGANIC FOOD/TIPS & GUIDES
+                        h2.post__title Tips for Ripening your Fruit
+                        time.post__date.wrapper.wrapper-col.j-center <b>07</b> Nov
+
+                  article.blog__post(style="background-image:url(images/blog2.jpg)")
+                     a.post__link-wrap.wrapper.wrapper-col(href="#")
+                        p.post__descr DIET/ORGANIC FOOD
+                        h2.post__title Health Benefits of a Raw Food
+                        time.post__date.wrapper.wrapper-col.j-center <b>03</b> Nov
+
+                  article.blog__post(style="background-image:url(images/blog3.jpg)")
+                     a.post__link-wrap.wrapper.wrapper-col(href="#")
+                        p.post__descr DIET/ORGANIC FOOD
+                        h2.post__title  Superfoods you should be eating
+                        time.post__date.wrapper.wrapper-col.j-center <b>25</b> Oct
+         
+         //TODO section partners
+         section.partners
+            h1.hidden-title Partners of Agro food 
+            .container.partners__wrapper.wrapper.j-around
+               //TODO! write in alt attribute company name 
+               picture
+                  source(srcset="images/partn.webp" type="image/webp")
+                  img.partners__logo(src="images/partn.jpg" alt="patners of Agro Food")
+               picture
+                  source(srcset="images/partn2.webp" type="image/webp")
+                  img.partners__logo(src="images/partn2.jpg" alt="patners of Agro Food")
+               picture
+                  source(srcset="images/partn3.webp" type="image/webp")
+                  img.partners__logo(src="images/partn3.jpg" alt="patners of Agro Food")
+               picture
+                  source(srcset="images/partn4.webp" type="image/webp")
+                  img.partners__logo(src="images/partn4.jpg" alt="patners of Agro Food")
+               picture
+                  source(srcset="images/partn5.webp" type="image/webp")
+                  img.partners__logo(src="images/partn5.jpg" alt="patners of Agro Food")
+
+
+
+                           
+
+
+
+
+
+
+
+      include components/footer.pug
+      include components/scripts.pug
+

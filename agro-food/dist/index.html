@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Best Agro food">
+  <link rel="preload" href="fonts/OpenSans-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/OpenSans-Light.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/OpenSans-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Raleway-Black.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Raleway-Black.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Raleway-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Raleway-Bold.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Raleway-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Raleway-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Raleway-Thin.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Raleway-Thin.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="preloader.min.css" as="style">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/preloader.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Agro food</title>
+</head>
+
+<body style="overflow:hidden">
+  <!--TODO! Preloader-->
+  <div class="preloader">
+    <div class="loader">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div><!-- TODO Главный экран-->
+  <section class="main-screen no-pb bg-section" style="background-image:url(&quot;images/main-bg.jpg&quot;)" id="home">
+    <!-- TODO Создаем хедер внутри секции(главный экран) -->
+    <header>
+      <div class="drag"></div>
+      <div class="container wrapper j-between">
+        <!-- Логотип сайта-->
+        <div class="menu wrapper">
+          <!--Поскольку это лендинг, поставим в href=/-->
+          <a class="header-logo logo" role="banner" href="/" aria-label="Logo of Agro food">
+            <picture>
+              <source srcset="images/logo.webp" type="image/webp">
+              <img class="logo" src="images/logo.png" alt="Agro food">
+            </picture>
+            <span aria-hidden="true">AGRO </span>
+          </a>
+          <nav class="menu">
+            <ul class="wrapper menu__ul wrapper-lg-col j-lg-between a-lg-center">
+              <li class="menu__item">
+                <a class="menu__item-link scroll-to" href="#home">Home</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__item-link scroll-to" href="#quality">About </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__item-link scroll-to" href="#agroFood">Pages </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__item-link scroll-to" href="#menuList">Gallery </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__item-link scroll-to" href="#comments">Blog</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__item-link scroll-to" href="#footer">Contacnts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <a class="header-btn btn" href="#">Get in Touch</a>
+        <button class="burger wrapper-lg-col j-lg-around a-lg-center" aria-label="menu" aria-describedby="open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+    <div class="container">
+      <h1 class="main-title">Organic
+        <br> Food
+      </h1>
+    </div>
+    <div class="wrapper j-center">
+      <!--TODO Секция наших карточек. -->
+      <div class="main-screen__container">
+        <div class="Awesome main-screen__card card">
+          <picture>
+            <source srcset="images/menu-bgAwesome.webp" type="image/webp">
+            <img class="absolute-img" src="images/menu-bgAwesome.png" alt="Food in menu" aria-hidden="true">
+          </picture>
+          <h2 class="card__title">Awesome
+            <br>
+            <span>Sweets </span>
+          </h2>
+        </div>
+        <div class="Organic main-screen__card card">
+          <picture>
+            <source srcset="images/menu-bgOrganic.webp" type="image/webp">
+            <img class="absolute-img" src="images/menu-bgOrganic.png" alt="Food in menu" aria-hidden="true">
+          </picture>
+          <h2 class="card__title">Organic
+            <br>
+            <span>food</span>
+          </h2>
+        </div>
+        <div class="Meet main-screen__card card">
+          <picture>
+            <source srcset="images/menu-bgTasty.webp" type="image/webp">
+            <img class="absolute-img" src="images/menu-bgTasty.png" alt="Food in menu" aria-hidden="true">
+          </picture>
+          <h2 class="card__title">tasty
+            <br>
+            <span>meat</span>
+          </h2>
+        </div>
+        <div class="Menu main-screen__card">
+          <div class="card__menu">
+            <button class="card__menu-link active" data-card="1">Agro</button>
+            <button class="card__menu-link" data-card="2">Awesome</button>
+            <button class="card__menu-link" data-card="3">Products </button>
+          </div>
+        </div>
+        <div class="Juicy main-screen__card card">
+          <picture>
+            <source srcset="images/menu-bgJuicy.webp" type="image/webp">
+            <img class="absolute-img" src="images/menu-bgJuicy.png" alt="Food in menu" aria-hidden="true">
+          </picture>
+          <h2 class="card__title">Juicy
+            <br>
+            <span>Fruits</span>
+          </h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  <main>
+    <!--TODO section number-2, quality-->
+    <section class="quality" id="quality">
+      <div class="container wrapper j-between wrapper-md-col">
+        <div>
+          <div class="quality__img-wrapper">
+            <picture>
+              <source srcset="images/section-2__img.webp" type="image/webp">
+              <img class="quality__img" src="images/section-2__img.jpg" alt="Quality food" aria-hidden="true">
+            </picture>
+            <picture>
+              <source srcset="images/section-2__img.webp" type="image/webp">
+              <img class="quality__img-before" src="images/section-2__img.jpg" alt="Quality food" aria-hidden="true">
+            </picture>
+          </div>
+        </div>
+        <h1 class="quality__title">
+          <span style="color:#72aa41">Quality</span>
+          <span style="color:#fcdb5a">food is the</span>
+          <span style="color:#db2985">most important</span>
+          <span style="color:#f2a137">thing in our</span>
+          <span style="color:#4fb1c9">life</span>
+        </h1>
+      </div>
+    </section>
+    <!--TODO section agro-food-->
+    <section class="agro-food-haracteric" id="agroFood">
+      <div class="container">
+        <h1 class="title agro-food__title">
+          <b>Agro food</b> Services
+        </h1>
+        <p class="title-descr">Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+        <div class="wrapper j-around a-end service-wrapper">
+          <div class="agro-food__service">
+            <svg class="icon svg-descr-ico1-dims agro__service-ico">
+              <use xlink:href="svgSprite/sprite.svg#descr-ico1"></use>
+            </svg>
+            <p class="service__title">Steak House</p>
+          </div>
+          <div class="agro-food__service">
+            <svg class="icon svg-descr-ico2-dims agro__service-ico">
+              <use xlink:href="svgSprite/sprite.svg#descr-ico2"></use>
+            </svg>
+            <p class="service__title">Tasty Cereals</p>
+          </div>
+          <div class="agro-food__service">
+            <svg class="icon svg-descr-ico3-dims agro__service-ico">
+              <use xlink:href="svgSprite/sprite.svg#descr-ico3"></use>
+            </svg>
+            <p class="service__title">Italian Pizza</p>
+          </div>
+          <div class="agro-food__service">
+            <svg class="icon svg-descr-ico4-dims agro__service-ico">
+              <use xlink:href="svgSprite/sprite.svg#descr-ico4"></use>
+            </svg>
+            <p class="service__title">Vegeterian Burgers</p>
+          </div>
+          <div class="agro-food__service">
+            <svg class="icon svg-descr-ico5-dims agro__service-ico">
+              <use xlink:href="svgSprite/sprite.svg#descr-ico5"></use>
+            </svg>
+            <p class="service__title">Awesome Cupcake</p>
+          </div>
+          <div class="agro-food__service">
+            <svg class="icon svg-descr-ico6-dims agro__service-ico">
+              <use xlink:href="svgSprite/sprite.svg#descr-ico6"></use>
+            </svg>
+            <p class="service__title">Vegetables</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--TODO section agro perfect-->
+    <section class="agro-perfect bg-section" style="background-image:url(&quot;images/agro-perfect.jpg&quot;)">
+      <picture>
+        <source srcset="images/agro-perfect.webp" type="image/webp">
+        <img class="absolute-img" src="images/agro-perfect.jpg" alt="" aria-hidden="true">
+      </picture>
+      <div class="container">
+        <h1 class="title agro-food__title agro-perfect__title">
+          <b>Agro Perfect</b>
+          <br> food for you
+        </h1>
+        <p class="agro-perfect__descr">Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic words etc. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. </p>
+        <a class="btn" href="#">Discover</a>
+      </div>
+    </section>
+    <!--TODO Section menu list-->
+    <section class="section-menu" id="menuList">
+      <!--TODO! hidden title for seo-->
+      <h1 class="hidden-title">Agro food restaurant prepares healthy and tasty food </h1>
+      <div class="container section-menu__flex-wrap wrapper j-center wrapper-sm-col">
+        <section class="section-menu__item wrapper wrapper-col a-start">
+          <!--TODO! images only 292x221-->
+          <!--TODO! в атрибуте data-alltext прописан полностью весь текст, который будет в модальном окне-->
+          <picture>
+            <source srcset="images/agro-perfect_desc1.webp" type="image/webp">
+            <img class="section-menu__img" src="images/agro-perfect_desc1.png" alt="our food is tasty and healthy" aria-hidden="true">
+          </picture>
+          <div class="section-menu__content">
+            <h2 class="section-menu__title">Superfoods you should be eating</h2>
+            <p class="section-menu__text" data-alltext="The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic words etc. Susp endisse ultricies nisi vel quam suscipit">
+              <span class="agro-perfect__text">The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic</span>
+              <br>
+              <a class="section-menu__more" href="#" aria-describedby="Open modal window, where you can read the entire text">more...</a>
+            </p>
+          </div>
+        </section>
+        <section class="section-menu__item wrapper wrapper-col a-start">
+          <picture>
+            <source srcset="images/agro-perfect_desc2.webp" type="image/webp">
+            <img class="section-menu__img" src="images/agro-perfect_desc2.png" alt="our food is tasty and healthy" aria-hidden="true">
+          </picture>
+          <div class="section-menu__content">
+            <h2 class="section-menu__title">Health Benefits of a Raw Food</h2>
+            <p class="section-menu__text" data-alltext="Dogfish shark, bango hog sucker, baikal oilfish, eeltail catfish regal whiptail catfish; squarehead catfish electric ray.">
+              <span class="agro-perfect__text">The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic</span>
+              <br>
+              <a class="section-menu__more" href="#" aria-describedby="Open modal window, where you can read the entire text">more...</a>
+            </p>
+          </div>
+        </section>
+        <section class="section-menu__item wrapper wrapper-col a-start">
+          <picture>
+            <source srcset="images/agro-perfect_desc3.webp" type="image/webp">
+            <img class="section-menu__img" src="images/agro-perfect_desc3.png" alt="our food is tasty and healthy" aria-hidden="true">
+          </picture>
+          <div class="section-menu__content">
+            <h2 class="section-menu__title">Grunt torrent catfish squaretail Norwegian Atlantic salmon</h2>
+            <p class="section-menu__text" data-alltext="Northern clingfish searobin betta blue shark. Jackfish leopard danio suckermouth armored catfish, eelpout velvetfish goldspotted killifish--driftfish ronquil emperor golden loach">
+              <span class="agro-perfect__text">The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic</span>
+              <br>
+              <a class="section-menu__more" href="#" aria-describedby="Open modal window, where you can read the entire text">more...</a>
+            </p>
+          </div>
+        </section>
+        <section class="section-menu__item wrapper wrapper-col a-start">
+          <picture>
+            <source srcset="images/agro-perfect_desc4.webp" type="image/webp">
+            <img class="section-menu__img" src="images/agro-perfect_desc4.png" alt="our food is tasty and healthy" aria-hidden="true">
+          </picture>
+          <div class="section-menu__content">
+            <h2 class="section-menu__title">Tips for Ripening your Fruit</h2>
+            <p class="section-menu__text" data-alltext="The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic words etc. Susp endisse ultricies nisi vel quam suscipit">
+              <span class="agro-perfect__text">The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic</span>
+              <br>
+              <a class="section-menu__more" href="#" aria-describedby="Open modal window, where you can read all this text">more...</a>
+            </p>
+          </div>
+        </section>
+      </div>
+    </section>
+    <!--TODO Tasty cakes-->
+    <section class="cakes" style="background-image:url(images/tasty-Cakc.jpg)">
+      <div class="container">
+        <h1 class="hidden-title">Agro food has the best desserts </h1>
+        <p class="main-title cakes__title">Tasty
+          <br> Cakes
+        </p>
+      </div>
+    </section>
+    <!--TODO Agro Progress-->
+    <section class="agro-progress">
+      <div class="container">
+        <h1 class="title agro-food__title">
+          <b>Agro</b> Progress
+        </h1>
+        <p class="title-descr">Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+        <div class="wrapper j-around">
+          <div class="wrapper agro-progress__item j-between">
+            <picture>
+              <source srcset="images/Icon1.webp" type="image/webp">
+              <img class="agro-progress__img" src="images/Icon1.png" alt="agro perfect tasty" aria-hidden="true">
+            </picture>
+            <div class="agro-progress__content">
+              <h2 class="agro-progress__title">350</h2>
+              <p class="agro-progress__text">Muffins</p>
+            </div>
+          </div>
+          <div class="wrapper agro-progress__item j-between">
+            <picture>
+              <source srcset="images/Icon2.webp" type="image/webp">
+              <img class="agro-progress__img" src="images/Icon2.png" alt="agro perfect tasty" aria-hidden="true">
+            </picture>
+            <div class="agro-progress__content">
+              <h2 class="agro-progress__title">158</h2>
+              <p class="agro-progress__text">Cakes</p>
+            </div>
+          </div>
+          <div class="wrapper agro-progress__item j-between">
+            <picture>
+              <source srcset="images/Icon3.webp" type="image/webp">
+              <img class="agro-progress__img" src="images/Icon3.png" alt="agro perfect tasty" aria-hidden="true">
+            </picture>
+            <div class="agro-progress__content">
+              <h2 class="agro-progress__title">500+</h2>
+              <p class="agro-progress__text">Cupcakes</p>
+            </div>
+          </div>
+          <div class="wrapper agro-progress__item j-between">
+            <picture>
+              <source srcset="images/Icon4.webp" type="image/webp">
+              <img class="agro-progress__img" src="images/Icon4.png" alt="agro perfect tasty" aria-hidden="true">
+            </picture>
+            <div class="agro-progress__content">
+              <h2 class="agro-progress__title">685</h2>
+              <p class="agro-progress__text">Doughnut</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--TODO gallery -->
+    <section class="gallery">
+      <div class="Mycontainer">
+        <!--TODO In data-imgBefore text for before -->
+        <div class="gallery__item" data-imgBefore="Testy Jam">
+          <picture>
+            <source srcset="images/gallery1.webp" type="image/webp">
+            <img class="gallery__img" src="images/gallery1.png" alt="gallery image" aria-hidden="true">
+          </picture>
+        </div>
+        <div class="gallery__item" data-imgBefore="Very Testy Bred">
+          <picture>
+            <source srcset="images/gallery2.webp" type="image/webp">
+            <img class="gallery__img" src="images/gallery2.png" alt="gallery image" aria-hidden="true">
+          </picture>
+        </div>
+        <div class="gallery__item" data-imgBefore="Jam">
+          <picture>
+            <source srcset="images/gallery3.webp" type="image/webp">
+            <img class="gallery__img" src="images/gallery3.png" alt="gallery image" aria-hidden="true">
+          </picture>
+        </div>
+        <div class="gallery__item" data-imgBefore="Coffe">
+          <picture>
+            <source srcset="images/gallery4.webp" type="image/webp">
+            <img class="gallery__img" src="images/gallery4.png" alt="gallery image" aria-hidden="true">
+          </picture>
+        </div>
+        <div class="gallery__item" data-imgBefore="Testy Cake">
+          <picture>
+            <source srcset="images/gallery5.webp" type="image/webp">
+            <img class="gallery__img" src="images/gallery5.png" alt="gallery image" aria-hidden="true">
+          </picture>
+        </div>
+        <div class="gallery__item" data-imgBefore="Agro milk">
+          <picture>
+            <source srcset="images/gallery6.webp" type="image/webp">
+            <img class="gallery__img" src="images/gallery6.png" alt="gallery image" aria-hidden="true">
+          </picture>
+        </div>
+        <div class="gallery__item" data-imgBefore="Meat">
+          <picture>
+            <source srcset="images/gallery7.webp" type="image/webp">
+            <img class="gallery__img" src="images/gallery7.png" alt="gallery image" aria-hidden="true">
+          </picture>
+        </div>
+        <div class="gallery__item" data-imgBefore="Confetti">
+          <picture>
+            <source srcset="images/gallery8.webp" type="image/webp">
+            <img class="gallery__img" src="images/gallery8.png" alt="gallery image" aria-hidden="true">
+          </picture>
+        </div>
+      </div>
+    </section>
+    <!--TODO Comments-->
+    <section class="agro-progress comments bg" style="background-image:url(images/comments-bg.jpg)" id="comments">
+      <div class="container">
+        <h1 class="title agro-food__title">
+          <b>People says</b> about agro
+        </h1>
+        <p class="title-descr">Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+        <div class="swiper-container swiper-comments">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <blockquote class="author__q">Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic words etc. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered</blockquote>
+              <div class="author wrapper">
+                <picture>
+                  <source srcset="images/avatar.webp" type="image/webp">
+                  <img class="author__avatar" src="images/avatar.png" alt="customer feedback about Agro food" aria-hidden="true">
+                </picture>
+                <cite class="author__name">Terens Smith<span>/CEO AntalAgro</span>
+                </cite>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <blockquote class="author__q">Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic words etc. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered</blockquote>
+              <div class="author wrapper">
+                <picture>
+                  <source srcset="images/avatar.webp" type="image/webp">
+                  <img class="author__avatar" src="images/avatar.png" alt="customer feedback about Agro food" aria-hidden="true">
+                </picture>
+                <cite class="author__name">Terens Smith<span>/CEO AntalAgro</span>
+                </cite>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <blockquote class="author__q">Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic words etc. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered</blockquote>
+              <div class="author wrapper">
+                <picture>
+                  <source srcset="images/avatar.webp" type="image/webp">
+                  <img class="author__avatar" src="images/avatar.png" alt="customer feedback about Agro food" aria-hidden="true">
+                </picture>
+                <cite class="author__name">Terens Smith<span>/CEO AntalAgro</span>
+                </cite>
+              </div>
+            </div>
+          </div>
+          <div class="comm-pagination wrapper j-sm-center"></div>
+        </div>
+      </div>
+    </section>
+    <!--TODO section blog posts -->
+    <section class="agro-progress blog bg">
+      <div class="container">
+        <h1 class="title agro-food__title">
+          <b>Blog</b> Posts
+        </h1>
+        <p class="title-descr blog__descr">Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+        <div class="wrapper blog__posts j-around">
+          <!--TODO! blog post-->
+          <article class="blog__post" style="background-image:url(images/blog1.jpg)">
+            <a class="post__link-wrap wrapper wrapper-col" href="#">
+              <p class="post__descr">ORGANIC FOOD/TIPS & GUIDES</p>
+              <h2 class="post__title">Tips for Ripening your Fruit</h2>
+              <time class="post__date wrapper wrapper-col j-center">
+                <b>07</b> Nov
+              </time>
+            </a>
+          </article>
+          <article class="blog__post" style="background-image:url(images/blog2.jpg)">
+            <a class="post__link-wrap wrapper wrapper-col" href="#">
+              <p class="post__descr">DIET/ORGANIC FOOD</p>
+              <h2 class="post__title">Health Benefits of a Raw Food</h2>
+              <time class="post__date wrapper wrapper-col j-center">
+                <b>03</b> Nov
+              </time>
+            </a>
+          </article>
+          <article class="blog__post" style="background-image:url(images/blog3.jpg)">
+            <a class="post__link-wrap wrapper wrapper-col" href="#">
+              <p class="post__descr">DIET/ORGANIC FOOD</p>
+              <h2 class="post__title"> Superfoods you should be eating</h2>
+              <time class="post__date wrapper wrapper-col j-center">
+                <b>25</b> Oct
+              </time>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!--TODO section partners-->
+    <section class="partners">
+      <h1 class="hidden-title">Partners of Agro food </h1>
+      <div class="container partners__wrapper wrapper j-around">
+        <!--TODO! write in alt attribute company name -->
+        <picture>
+          <source srcset="images/partn.webp" type="image/webp">
+          <img class="partners__logo" src="images/partn.jpg" alt="patners of Agro Food">
+        </picture>
+        <picture>
+          <source srcset="images/partn2.webp" type="image/webp">
+          <img class="partners__logo" src="images/partn2.jpg" alt="patners of Agro Food">
+        </picture>
+        <picture>
+          <source srcset="images/partn3.webp" type="image/webp">
+          <img class="partners__logo" src="images/partn3.jpg" alt="patners of Agro Food">
+        </picture>
+        <picture>
+          <source srcset="images/partn4.webp" type="image/webp">
+          <img class="partners__logo" src="images/partn4.jpg" alt="patners of Agro Food">
+        </picture>
+        <picture>
+          <source srcset="images/partn5.webp" type="image/webp">
+          <img class="partners__logo" src="images/partn5.jpg" alt="patners of Agro Food">
+        </picture>
+      </div>
+    </section>
+  </main>
+  <!--TODO Footer-->
+  <footer id="footer">
+    <div class="wrapper footer-wrapper">
+      <div class="footer__container wrapper a-start j-center wrapper-lg-col a-lg-center">
+        <div class="wrapper footer__container-wrap j-center">
+          <div class="footer__col wrapper wrapper-col j-between a-start a-lg-center">
+            <div class="footer__col-logo">
+              <!--TODO! Logotip-->
+              <a class="header-logo logo footer-logo" role="banner" href="/" aria-label="Logo of Agro food">
+                <picture>
+                  <source srcset="images/logo.webp" type="image/webp">
+                  <img class="logo" src="images/logo.png" alt="Agro food">
+                </picture>
+                <span aria-hidden="true">AGRO</span>
+              </a>
+            </div>
+            <!--Emal address, contacts-->
+            <div class="footer__contact">
+              <h2 class="footer__contact-title">email</h2>
+              <a class="footer__contact-link" href="mailto:support@agrocompany.com">support@agrocompany.com</a>
+            </div>
+          </div>
+          <div class="footer__col-menu wrapper wrapper-col j-between a-start a-lg-center">
+            <nav class="footer__menu wrapper a-start j-lg-center">
+              <ul class="footer__ul">
+                <li class="footer__list">
+                  <a class="footer__link scroll-to" href="#home">Home</a>
+                </li>
+                <li class="footer__list">
+                  <a class="footer__link scroll-to" href="#quality">About</a>
+                </li>
+                <li class="footer__list">
+                  <a class="footer__link scroll-to" href="#agroFood">Pages</a>
+                </li>
+                <li class="footer__list">
+                  <a class="footer__link scroll-to" href="#menuList">Gallery</a>
+                </li>
+                <li class="footer__list">
+                  <a class="footer__link scroll-to" href="#comments">Blog</a>
+                </li>
+                <li class="footer__list">
+                  <a class="footer__link scroll-to" href="#footer">Contacts</a>
+                </li>
+              </ul>
+              <ul class="footer__ul">
+                <li class="footer__list">
+                  <a class="footer__link" href="#">Partnets</a>
+                </li>
+                <li class="footer__list">
+                  <a class="footer__link" href="#">Customer Service</a>
+                </li>
+                <li class="footer__list">
+                  <a class="footer__link" href="#">Vegetables</a>
+                </li>
+                <li class="footer__list">
+                  <a class="footer__link" href="#">Fruits</a>
+                </li>
+                <li class="footer__list">
+                  <a class="footer__link" href="#">Organic Food</a>
+                </li>
+                <li class="footer__list">
+                  <a class="footer__link" href="#">Privacy policy </a>
+                </li>
+              </ul>
+            </nav>
+            <!--Еуд address, contacts-->
+            <div class="footer__contact">
+              <h2 class="footer__contact-title">Phone</h2>
+              <div>
+                <a class="footer__contact-link" href="tel:+1 (234) 56789">+1 (234) 56789</a>, <a class="footer__contact-link" href="tel:+1 987 654 3210">+1 987 654 3210</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__social">
+          <a class="footer__social-link" href="#" target="_blank" rel="noopener">
+            <svg class="icon svg-footer__social1-dims footer-social-icon" role="img" aria-label="Agro food in twitter">
+              <use xlink:href="svgSprite/sprite.svg#footer__social1"></use>
+            </svg>
+          </a>
+          <a class="footer__social-link" href="#" target="_blank" rel="noopener">
+            <svg class="icon svg-footer__social2-dims footer-social-icon" role="img" aria-label="Agro food in facebook">
+              <use xlink:href="svgSprite/sprite.svg#footer__social2"></use>
+            </svg>
+          </a>
+          <a class="footer__social-link" href="#" target="_blank" rel="noopener">
+            <svg class="icon svg-footer__social3-dims footer-social-icon" role="img" aria-label="Agro food in linkedin">
+              <use xlink:href="svgSprite/sprite.svg#footer__social3"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="map" id="map"></div>
+    </div>
+  </footer>
+  <div class="modal">
+    <div class="modal-wrap">
+      <p class="modal-text" aria-live="assertive">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, eveniet ipsa maxime nobis natus assumenda ducimus, nesciunt aut, consequatur laboriosam reiciendis! Nesciunt dolor incidunt assumenda. In rerum delectus quasi assumenda!</p>
+      <button class="btn-close wrapper j-center wrapper-col a-start" aria-label="Close popup">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

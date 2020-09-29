@@ -1,0 +1,84 @@
+include partials/mixins
+
+//TODO! Preloader
+.preloader
+   .loader 
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+
+// TODO Главный экран
+section.main-screen.no-pb.bg-section(style='background-image:url("images/main-bg.jpg")' id="home")
+   // TODO Создаем хедер внутри секции(главный экран) 
+   header
+      .drag
+      .container.wrapper.j-between 
+         // Логотип сайта
+         .menu.wrapper
+            //Поскольку это лендинг, поставим в href=/
+            a.header-logo.logo(role='banner' href="/" aria-label="Logo of Agro food")
+               +webp('logo', 'png', 'Agro food')
+               span(aria-hidden='true') AGRO 
+            nav.menu 
+               ul.wrapper.menu__ul.wrapper-lg-col.j-lg-between.a-lg-center 
+                  li.menu__item
+                     a(href="#home").menu__item-link.scroll-to Home
+                  li.menu__item
+                     a(href="#quality").menu__item-link.scroll-to About 
+                  li.menu__item
+                     a(href="#agroFood").menu__item-link.scroll-to Pages 
+                  li.menu__item
+                     a(href="#menuList").menu__item-link.scroll-to Gallery 
+                  li.menu__item
+                     a(href="#comments").menu__item-link.scroll-to Blog
+                  li.menu__item
+                     a(href="#footer").menu__item-link.scroll-to Contacnts
+         a(href="#").header-btn.btn Get in Touch
+         button.burger.wrapper-lg-col.j-lg-around.a-lg-center(aria-label="menu" aria-describedby="open menu")
+            span
+            span
+            span
+   .container
+      h1.main-title Organic <br> Food     
+   .wrapper.j-center 
+      //TODO Секция наших карточек. 
+      .main-screen__container
+         .Awesome.main-screen__card.card
+            picture 
+               source(srcset="images/menu-bgAwesome.webp" type="image/webp")
+               img(class="absolute-img" src="images/menu-bgAwesome.png" alt='Food in menu' aria-hidden="true") 
+            h2.card__title Awesome <br> 
+               span Sweets  
+         .Organic.main-screen__card.card
+            picture 
+               source(srcset="images/menu-bgOrganic.webp" type="image/webp")
+               img(class="absolute-img" src="images/menu-bgOrganic.png" alt='Food in menu' aria-hidden="true") 
+            h2.card__title Organic <br> 
+               span food
+         .Meet.main-screen__card.card
+            picture 
+               source(srcset="images/menu-bgTasty.webp" type="image/webp")
+               img(class="absolute-img" src="images/menu-bgTasty.png" alt='Food in menu' aria-hidden="true") 
+            h2.card__title tasty <br> 
+               span meat
+         .Menu.main-screen__card
+               .card__menu 
+                  button.card__menu-link.active(data-card="1") Agro
+                  button.card__menu-link(data-card="2") Awesome
+                  button.card__menu-link(data-card="3") Products      
+         .Juicy.main-screen__card.card
+            picture 
+               source(srcset="images/menu-bgJuicy.webp" type="image/webp")
+               img(class="absolute-img" src="images/menu-bgJuicy.png" alt='Food in menu' aria-hidden="true") 
+            h2.card__title Juicy <br> 
+               span Fruits
+
+
+      
+
+  
+      
+            
+                 
+

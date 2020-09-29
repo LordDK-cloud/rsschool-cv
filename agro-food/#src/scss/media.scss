@@ -1,0 +1,563 @@
+@media(max-width:1400px){
+
+}
+
+@media(max-width:1200px){
+   :root {
+      // TODO! Colors
+      --yellow:#fcdb5a;
+      --black: #1b1b1b;
+      --grey: #b3b3b3;
+      --black-light: #333;
+
+      // TODO! FONT-SIZES
+      --fz-v-big: 190px;
+      --fz-big: 150px;
+      --fz-semi-big: 85px;
+      --fz-five:50px;
+      --fz-x-xxl: 36px;
+      --fz-xxl: 27px;
+      --fz-xl: 22.5px;
+      --fz-lg: 16.2px;
+      --fz-md: 14.2px;
+      --fz-sm: 13.2px;
+      --fz-small: 11px;
+
+      //TODO! margins
+      --mr-big: 95px;
+      --mr-xxl: 70px;
+      --mr-xl: 60px;
+      --mr-xl-lg: 50px;
+      --mr-lg:30px;
+      --mr-md:25px;
+      --mr-sm:20px;
+
+      //TODO! Section Comments padding for blockquote 
+      --comm-p: 65px;
+
+      //TODO! Proportions (images/post ..)
+      --proportion-w:370px;
+
+      //TODO! font-family 
+      --storytella: 'Storytella', sans-serif;
+      --opensans  : OpenSans, sans-serif;
+      --raleway   : "Raleway", sans-serif;
+   }
+
+   .main-screen {
+      background-size: cover;
+   }
+
+   .main-screen__container {
+      grid-template-areas:
+        "Awesome Awesome Awesome Meet Meet"
+        "Menu Organic Organic Juicy Juicy";
+      grid-template-rows: 27.5vh 27.5vh;
+   }
+
+   .main-screen__card.Menu {
+      padding-left: 0;
+      justify-content: flex-start;
+   }
+
+   .card__menu-link {
+      padding-left: 0;
+   }
+
+   .quality__img-wrapper {
+      width: 619px;
+      height: 392px;
+   }
+
+   .quality__img-before {
+      border-width: 26px;
+   }
+
+}
+
+@media(max-width:991px){
+
+   :root {
+      // TODO! Colors
+      --yellow:#fcdb5a;
+      --black: #1b1b1b;
+      --grey: #b3b3b3;
+      --black-light: #333;
+
+      // TODO! FONT-SIZES
+      --fz-v-big: 170px;
+      --fz-big: 120px;
+      --fz-semi-big: 70px;
+      --fz-five:44px;
+      --fz-x-xxl: 32px;
+      --fz-xxl: 24.5px;
+      --fz-xl: 20px;
+      --fz-lg: 15.8px;
+      --fz-md: 14px;
+      --fz-sm: 13px;
+      --fz-small: 11px;
+
+      //TODO! margins
+      --mr-big: 95px;
+      --mr-xxl: 70px;
+      --mr-xl: 60px;
+      --mr-xl-lg: 50px;
+      --mr-lg:30px;
+      --mr-md:25px;
+      --mr-sm:20px;
+
+      //TODO! agro-perfect padding 
+      --pd-agro: 220px;
+      --pd-def:130px;
+
+      //TODO! Section Comments padding for blockquote 
+      --comm-p: 45px;
+
+      //TODO! Proportions (images/post ..)
+      --proportion-w:370px;
+
+      //TODO! font-family 
+      --storytella: 'Storytella', sans-serif;
+      --opensans  : OpenSans, sans-serif;
+      --raleway   : "Raleway", sans-serif;
+   }
+
+   section.no-pb {
+      padding-top: calc(var(--fz-big) + 45px);
+   }
+
+   nav.menu {
+      transition: 1s transform;
+      position: fixed;
+      left: 0; top: 0; 
+      width: 100%;
+      height: 100%;
+      z-index: 6;
+      transform:translate(-100%, 0);
+
+      background-color: rgba(#000, .8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   nav.menu--active {
+      transform:translate(0, 0);
+   } 
+
+   .drag {
+      display: none;
+   }
+
+   .menu__ul {
+      flex: 0 0 60%;
+      height: 60%;
+      --fz-sm: 18px;
+      li {
+         width: 100%;
+      }
+      a {
+         padding:10px 0;
+         display: block;
+         text-align: center;
+         transition: .7s color;
+         &:hover {
+            color: var(--yellow);
+         }
+      }
+   }
+
+   .header-logo {
+      margin-right: 0;
+      width: 80px;
+      height: 117px;
+   }
+
+   img.logo {
+      width: 40px;
+   }
+
+   //TODO! burger   
+   .burger {
+      display: flex;
+      width: 45px; height: 45px;
+      position: relative;
+      z-index: 7;
+      cursor: pointer;
+      span {
+         width: 30px;
+         height: 4px;
+         transition: 1s transform, 1s margin, .9s opacity;
+         background: #fff;
+      }
+   }
+
+   .burger--active {
+
+      span:nth-child(2) {
+         transform:translate(-120%, 0);
+         opacity: 0;
+         margin:-44px 0;
+      }
+
+      span:first-child {
+         transform:rotate(45deg);
+      }
+
+      span:last-child {
+         transform:rotate(-45deg);
+      }
+      
+   }
+
+   .main-screen__container {
+      --fz-x-xxl: 26px;
+   }
+
+   .quality__img-wrapper {
+      width: 539px;
+      height: 312px;
+   }
+
+   .quality__img-before {
+      border-width: 22px;
+   }  
+
+   // TODO media 991 agro-perfect cards 
+
+   .section-menu__flex-wrap {
+      flex-wrap: wrap;
+   }
+
+   .section-menu__item {
+      flex: 0 0 50%;
+      align-items: unset!important;
+   }
+
+   .section-menu__img {
+      width: 100%;
+   }
+
+   //TODO agro progress 
+
+   .agro-progress .wrapper {
+      flex-wrap: wrap;
+   }
+
+   .agro-progress__item {
+      margin-bottom: 40px;
+   }
+
+   //TODO partners 
+   
+   .partners__wrapper {
+      flex-wrap: wrap;
+   }
+
+   //TODO footer 
+
+   .footer__col {
+      margin:0 0 40px 0;
+   }
+
+   .footer__contact-title {
+      text-align: center;
+   }
+
+   .footer__container-wrap {
+      flex-direction: column-reverse;
+   }
+
+   .footer__col-logo {
+      display: none;
+   }
+
+   .footer-wrapper {
+      display: block!important;
+   }
+
+   .map {
+      height: calc(220px + 200 * ((100vw - 320px) / (991 - 320)))
+   }
+
+}
+
+@media(max-width:791px){
+
+   :root {
+      // TODO! Colors
+      --yellow:#fcdb5a;
+      --black: #1b1b1b;
+      --grey: #b3b3b3;
+      --black-light: #333;
+
+      // TODO! FONT-SIZES
+      --fz-v-big: 170px;
+      --fz-big: 100px;
+      --fz-semi-big: 60px;
+      --fz-five:44px;
+      --fz-x-xxl: 32px;
+      --fz-xxl: 25px;
+      --fz-xl: 19.5px;
+      --fz-lg: 18.8px;
+      --fz-md: 17px;
+      --fz-sm: 16px;
+      --fz-small: 11px;
+
+      //TODO! margins
+      --mr-big: 95px;
+      --mr-xxl: 70px;
+      --mr-xl: 60px;
+      --mr-xl-lg: 50px;
+      --mr-lg:30px;
+      --mr-md:25px;
+      --mr-sm:20px;
+
+      //TODO! agro-perfect padding 
+      --pd-agro: 160px;
+      --pd-def:100px;
+
+      //TODO! Section Comments padding for blockquote 
+      --comm-p: 35px;
+
+      //TODO! Proportions (images/post ..)
+      --proportion-w:370px;
+
+      //TODO! font-family 
+      --storytella: 'Storytella', sans-serif;
+      --opensans  : OpenSans, sans-serif;
+      --raleway   : "Raleway", sans-serif;
+   }
+   
+   .main-screen__container {
+      --fz-xxl:18px;
+   }
+
+   .quality__img-wrapper {
+      width: 500px;
+      height: 281px;
+   }
+
+   .quality__img-before {
+      right: 0;
+   }
+
+   .quality__title {
+      text-align: center;
+      order: -1;
+      margin:0 0 90px 0;
+   }
+
+   //TODO 791 agro perfect cards
+
+   .section-menu {
+      padding-bottom: 0;
+   }
+
+   .agro-perfect__text {
+      font-size: var(--fz-sm);
+   }
+
+   .section-menu__content {
+      padding: 4% 6%;
+   }
+
+   //TODO cakes 
+
+   .cakes__title {
+      color: var(--yellow);
+   }
+
+   //TODO gallery
+
+   .Mycontainer {
+      grid-template-columns: 1fr 1fr;
+   }
+
+   //TODO comments 
+   
+   .author__q {
+      padding-top: 35px;
+   }
+
+   .author__q:before {
+      top:8px;
+   }
+
+
+}
+
+@media(max-width:576px){
+
+   :root {
+      // TODO! Colors
+      --yellow:#fcdb5a;
+      --black: #1b1b1b;
+      --grey: #b3b3b3;
+      --black-light: #333;
+
+      // TODO! FONT-SIZES
+      --fz-v-big: 170px;
+      --fz-big: 100px;
+      --fz-semi-big: 47px;
+      --fz-five:44px;
+      --fz-x-xxl: 32px;
+      --fz-xxl: 24.5px;
+      --fz-xl: 19px;
+      --fz-lg: 17.8px;
+      --fz-md: 16px;
+      --fz-sm: 15px;
+      --fz-small: 11px;
+
+      //TODO! margins
+      --mr-big: 95px;
+      --mr-xxl: 70px;
+      --mr-xl: 60px;
+      --mr-xl-lg: 50px;
+      --mr-lg:25px;
+      --mr-md:18px;
+      --mr-sm:12px;
+
+      //TODO! agro-perfect padding 
+      --pd-agro: 40px;
+      --pd-def:80px;
+
+      //TODO! Section Comments padding for blockquote 
+      --comm-p: 15px;
+
+      //TODO! Proportions (images/post ..)
+      --proportion-w:370px;
+
+      //TODO! font-family 
+      --storytella: 'Storytella', sans-serif;
+      --opensans  : OpenSans, sans-serif;
+      --raleway   : "Raleway", sans-serif;
+   }
+
+   .card__menu-link {
+      font-size: 26px;
+   }
+
+   .main-screen__container {
+      grid-template-areas:
+        "Menu Menu Awesome Awesome Awesome"
+        "Organic Organic Meet Meet Meet"
+        "Organic Organic Juicy Juicy Juicy";
+      grid-template-rows: 25.5vh 25.5vh 25.5vh;
+   }
+
+   .quality__img-wrapper {
+      width: 410px;
+      height: 200px;
+   }
+   
+   .quality__img-before {
+      border-width: 18px;
+   } 
+
+   //TODO media 576 agro-perfect card
+
+   .section-menu {
+      transform: translate(0,0);
+      .container {
+         padding: 0 0;
+      }
+   }
+
+   .section-menu__item:nth-of-type(2n) .section-menu__content {
+      order: unset
+   }
+
+   .agro-perfect__text {
+      font-size: var(--fz-lg);
+   }
+
+   .section-menu__more {
+      font-size: var(--fz-xl);
+   }
+
+   //TODO comments
+
+   .author {
+      margin-bottom: 20px;
+   }
+
+   .comm-pagination {
+      transform: translate(0,0)!important;
+   }
+
+   .author__avatar {
+      width: 45px;
+      height: 45px;
+   }
+
+   .modal-wrap {
+      width: 90%;
+   }
+
+}
+
+@media(max-width:420px){
+
+   :root {
+      // TODO! Colors
+      --yellow:#fcdb5a;
+      --black: #1b1b1b;
+      --grey: #b3b3b3;
+      --black-light: #333;
+
+      // TODO! FONT-SIZES
+      --fz-v-big: 170px;
+      --fz-big: 100px;
+      --fz-semi-big: 44px;
+      --fz-five:41px;
+      --fz-x-xxl: 28px;
+      --fz-xxl: 23px;
+      --fz-xl: 18.5px;
+      --fz-lg: 15.5px;
+      --fz-md: 14.5px;
+      --fz-sm: 13.5px;
+      --fz-small: 11px;
+
+      //TODO! margins
+      --mr-big: 95px;
+      --mr-xxl: 70px;
+      --mr-xl: 60px;
+      --mr-xl-lg: 50px;
+
+      //TODO! agro-perfect padding 
+      --pd-def:40px;
+
+      //TODO! Section Comments padding for blockquote 
+      --comm-p: 0px;
+
+      //TODO! Proportions (images/post ..)
+      --proportion-w:370px;
+
+      //TODO! font-family 
+      --storytella: 'Storytella', sans-serif;
+      --opensans  : OpenSans, sans-serif;
+      --raleway   : "Raleway", sans-serif;
+   }
+
+   .quality__img-wrapper {
+      width: 317px;
+      height: 160px;
+   }
+
+   .quality__img-before {
+      border-width: 15px;
+   } 
+
+   //TODO media 420 agro-perfect card
+
+   .agro-perfect__text {
+      font-size: var(--fz-lg);
+   }
+
+   .section-menu__more {
+      font-size: var(--fz-xl);
+   }
+
+}
+
